@@ -14,11 +14,11 @@ You perform web searches to find information, research topics, check current new
 ## Available Tools
 
 You interact with Brave Search using the CLI scripts via Bash. The CLI is located at:
-`/home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/cli.ts`
+`/Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/cli.ts`
 
 ### CLI Commands
 
-Run commands using: `node /home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js <command> [options]`
+Run commands using: `node /Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js <command> [options]`
 
 | Command | Description | Required Options |
 |---------|-------------|------------------|
@@ -37,16 +37,16 @@ Run commands using: `node /home/USER/.claude/plugins/local-marketplace/web-searc
 
 ```bash
 # General web search
-node /home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "product regulations UK 2024"
+node /Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "product regulations UK 2024"
 
 # Search with limited results
-node /home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
+node /Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
 
 # Local business search
-node /home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js local-search --query "product shops London"
+node /Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js local-search --query "product shops London"
 
 # Paginated search
-node /home/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "product-type widget" --offset 10
+node /Users/USER/.claude/plugins/local-marketplace/web-search-manager/scripts/dist/cli.js web-search --query "product-type widget" --offset 10
 ```
 
 ## Search Types
@@ -81,6 +81,6 @@ All CLI commands output JSON. Parse the JSON response and present relevant infor
 - Respect search result limits (max 20 per request)
 
 ## Self-Documentation
-Log API quirks/errors to: `/home/USER/biz/plugin-learnings/web-search-manager.md`
+Log API quirks/errors to: `/Users/USER/biz/plugin-learnings/web-search-manager.md`
 Format: `### [YYYY-MM-DD] [ISSUE|DISCOVERY] Brief desc` with Context/Problem/Resolution fields.
 Full workflow: `~/biz/docs/reference/agent-shared-context.md`
