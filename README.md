@@ -60,16 +60,16 @@ node scripts/dist/cli.js web-search
 
 ```bash
 # General web search
-node scripts/dist/cli.js web-search --query "product regulations UK 2024"
+node /Users/USER/node scripts/dist/cli.js web-search --query "product regulations UK 2024"
 
 # Search with limited results
-node scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
+node /Users/USER/node scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
 
 # Local business search
-node scripts/dist/cli.js local-search --query "product shops London"
+node /Users/USER/node scripts/dist/cli.js local-search --query "product shops London"
 
 # Paginated search
-node scripts/dist/cli.js web-search --query "product-type widget" --offset 10
+node /Users/USER/node scripts/dist/cli.js web-search --query "product-type widget" --offset 10
 ```
 
 ## How It Works
