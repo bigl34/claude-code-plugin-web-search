@@ -19,7 +19,7 @@ Dedicated agent for web search and page fetching using Brave Search API and Jina
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/claude-code-plugin-web-search.git
+git clone https://github.com/bigl34/claude-code-plugin-web-search.git
 cd claude-code-plugin-web-search
 cp config.template.json config.json  # fill in your credentials
 cd scripts && npm install
