@@ -3,7 +3,7 @@
 
 Dedicated agent for web search and page fetching using Brave Search API and Jina Reader
 
-![Version](https://img.shields.io/badge/version-1.1.5-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+![Version](https://img.shields.io/badge/version-1.3.0-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
 
 ## Features
 
@@ -39,14 +39,6 @@ node scripts/dist/cli.js web-search
    ```
 4. Ensure the MCP server binary is available on your system (see the service's documentation)
 
-## Configuration
-
-Copy `config.template.json` to `config.json` and fill in the required values:
-
-| Field | Placeholder |
-|-------|-------------|
-| `credentials_path` | `/path/to/your/credentials` |
-
 ## Available Commands
 
 ### CLI Commands
@@ -68,16 +60,16 @@ Copy `config.template.json` to `config.json` and fill in the required values:
 
 ```bash
 # General web search
-node /Users/USER/node scripts/dist/cli.js web-search --query "product regulations UK 2024"
+node $HOME/node scripts/dist/cli.js web-search --query "product regulations UK 2024"
 
 # Search with limited results
-node /Users/USER/node scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
+node $HOME/node scripts/dist/cli.js web-search --query "regulatory authority product registration process" --count 5
 
 # Local business search
-node /Users/USER/node scripts/dist/cli.js local-search --query "product shops London"
+node $HOME/node scripts/dist/cli.js local-search --query "product shops London"
 
 # Paginated search
-node /Users/USER/node scripts/dist/cli.js web-search --query "product-type widget" --offset 10
+node $HOME/node scripts/dist/cli.js web-search --query "product-type widget" --offset 10
 ```
 
 ## How It Works
